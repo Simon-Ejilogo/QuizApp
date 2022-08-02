@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+		div#test{border: #000 1px solid; padding:10px 40px 40px 40px;}
+	</style>
+
+
+<script>
+	var test, question, choice, choices;
+  	var questions = [
+        ["Who founder the Legion", "James", "Frank", "John", "B"],
+		
+	 ["In what year was the Legion founder", "1928", "1284", "1921", "C"],
+		
+	 ["Which vestment is worn during Lent", "Purple", "Green", "Red", "A" ],
+		
+	 ["Catholic means", "Together", "Worlwide", "Universal", "C"]
+	];
+
+     test.innerHTML = "<h3>"+question+"</h3>";
+
+  test.innerHTML += "<button name="choices" type="submit" value="1" onclick='checkAnswer()'>HTML</button>";
+  test.innerHTML += "<button name="choices" type="submit" value="2" onclick='checkAnswer()'>CSS</button>";  
+  test.innerHTML += "<button name="choices" type="submit" value="3" onclick='checkAnswer()'>CSS</button>";
+	}
+		
+	function checkAnswer(){
+		choices = document.getElementByName("choices");
+		for (var i = 0; i < choices.length; i++) {
+			if(choices[i].click){
+				
+			   choice = choices[i].value;
+			}
+		}
+		
+	window.write(questions[choice]);
+
+</script>
+
+<title>AllQuestionPage</title>
+</head>
+
+<body>
+	
+	
+	<h2 id="test_status"></h2>
+		
+	<div id= "test"></div>
+	
+	
+	
+	
+</body>
+</html>

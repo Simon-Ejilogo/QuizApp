@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HANDBOOK</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles1.css" rel="stylesheet" type="text/css">
+</head>
+<div>
+     <body> 
+         <header>
+              <h2> LEGION OF MARY QUIZ (HANDBOOK)</h2>
+        </header>
+  <section> 
+       <div>
+          <article>
+              
+               <h2 id="quest">Question</h2>   
+               <h1 id= "test" > ? </h1>
+			
+              <button id ="bt" onclick="displayDate()">View Answer </button><br>  
+              <p id="butt"> : </p>  <hr> 
+              
+        <div id="Quest" >
+          <button id='1' name='choices'>1</button>  
+          <button id='2' name='choices'>2</button>
+          <button id='3' name='choices'>3</button>
+          <button id='4' name='choices'>4</button>
+          <button id='5' name='choices'>5</button>
+          <button id='6' name='choices'>6</button>
+          <button id='7' name='choices'>7</button>
+          <button id='8' name='choices'>8</button>
+          <button id='9' name='choices'>9</button>
+          <button id='10' name='choices'>10</button>
+          <button id='11' name='choices'>11</button>
+          <button id='12' name='choices'>12</button>
+          <button id='13' name='choices'>13</button>
+          <button id='14' name='choices'>14</button>
+          <button id='15' name='choices'>15</button>
+          <button id='16' name='choices'>16</button>
+          <button id='17' name='choices'>17</button>
+          <button id='18' name='choices'>18</button>
+          <button id='19' name='choices'>19</button>
+          <button id='20' name='choices'>20</button>
+          <button id='21' name='choices'>21</button>  
+          <button id='22' name='choices'>22</button>
+          <button id='23' name='choices'>23</button>
+          <button id='24' name='choices'>24</button>
+          <button id='25' name='choices'>25</button>
+          <button id='26' name='choices'>26</button>
+          <button id='27' name='choices'>27</button>
+          <button id='28' name='choices'>28</button>
+          <button id='29' name='choices'>29</button>
+          <button id='30' name='choices'>30</button>
+          <button id='31' name='choices'>31</button>
+          <button id='32' name='choices'>32</button>
+          <button id='33' name='choices'>33</button>
+          <button id='34' name='choices'>34</button>
+          <button id='35' name='choices'>35</button>
+          <button id='36' name='choices'>36</button>
+          <button id='37' name='choices'>37</button>
+          <button id='38' name='choices'>38</button>
+          <button id='39' name='choices'>39</button>
+          <button id='40' name='choices'>40</button>
+          <button id='41' name='choices'>41</button>  
+          <button id='42' name='choices'>42</button>
+          <button id='43' name='choices'>43</button>
+          <button id='44' name='choices'>44</button>
+          <button id='45' name='choices'>45</button>
+          <button id='46' name='choices'>46</button>
+          <button id='47' name='choices'>47</button>
+          <button id='48' name='choices'>48</button>
+          <button id='49' name='choices'>49</button>
+          <button id='50' name='choices'>50</button>
+          <button id='51' name='choices'>51</button>
+          <button id='52' name='choices'>52</button>
+          <button id='53' name='choices'>53</button>
+          <button id='54' name='choices'>54</button>
+          <button id='55' name='choices'>55</button>
+          <button id='56' name='choices'>56</button>
+          <button id='57' name='choices'>57</button>
+          <button id='58' name='choices'>58</button>
+          <button id='59' name='choices'>59</button>
+          <button id='60' name='choices'>60</button>
+		   
+          </div>
+        
+        <script>
+
+       var choice, testline, QuestionNo, ansButton, result, questNo;
+       var questions = [ 
+      [], 
+     
+	
+
+
+  
+["Who delivered an address  to a group of Italian legionaries  on the 30th of October  1982. ","Pope John-Paul II"],
+["In the preliminary note of the handbook, which chapter were we advised to read, before establishing the Legion of Mary in a  Parish or District.  ","Chapter 20, the Legion system invariable"],
+["Which Society did Frank Duff belong to, before starting the Legion of Mary", " St. Vincent de Paul Society"],
+["Who introduced the Cause of Beatification  of Servant of God, Frank Duff? "," His Eminence, Desmond Cardinal Conell, Archbishop  of Dublin"],
+["What was the first corporate act of the Pioneer legionaries?"," To go on their knees"],
+["Who is the  Perfect Model of the Apostolic Spiritual life? "," The Blessed Virgin Mary"],
+["On what is the devotional outlook of the Legion reflected  upon? "," On the prayers of the Legion"], 
+["What is the heavenly sequel  that is prophesied after Our Lady's Privilege of the Immaculate Conception.","  I) The Divine Maternity  II) The crushing of the Serpents head in redemption  III) Mary's Motherhood of men"],
+["Which virtue is the root and instrument of Legionary action? "," Humility"],
+["What devotion requires the formal entry into a Compact with Mary, whereby, one gives to her, one's whole self? ","  True devotion to Mary"],
+["What is the predominant  feature of the Legion's Standard? "," The  Holy Spirit"],
+["Who describes the union which exist between Christ and the other Baptized,  as being like  the union between the head and other members of the human body?  "," St. Paul"],
+["What does the handbook say, that the health of a Catholic community  depends upon?"," A large Apostolic class, belonging to the Laity"],
+["What is the Legion's System of formation? "," Master and Apprentice System"],
+["How does the Legion estimate perfection of membership?"," In accord to exact adherence to her System"],
+["What is the Primary  obligation of the Legionary?"," Duty of attendance at Weekly meetings"],
+["What is described as the heart of the Legion, from which the life blood flows, the power house from which it receives its light...  its treasury out of which special needs are provided for?"," The Weekly meeting"],
+["In which article of the handbook is it alluded to, that the Legion has a Social value, which is of natural asset to the individual Country, where the Legion is established? "," Article 3 of chapter 12. ( To Weld all together) "],
+["What are the 3 requirements, necessary  for Membership into the ranks of the Legion? ","I) Must faithfully practise their religion. II) Are animated by a desire to fulfil their role, in the Church's apostolate. III) Are prepared to fulfil each and every duty which active membership entails"],
+["What happens after the period of probation is judged to have been completed by a Prospective legionary? "," The Candidate is given at least, a Week’s notice of reception, during which he/ she becomes familiar with the words of the promise"],
+["What is the gateway to the Legion? The Probation and the  Promise"],
+["Why do we address ourselves as Brothers and Sisters in the Legion? ","For the Purpose of the work we do"],
+["A qualified legionary that is sent to represent the Spiritual Director in special circumstances,  is referred to as? "," The Tribune"],
+["The idea that legionaries will never rise above the standards of Spirit and work, created by their officers, as contained in the handbook, is attributed to who? "," Napoleon"], 
+["What is contained in Chapter 15 of the Legion handbook? The Legion Promise. And to who, is it addressed ? "," The Holy Spirit"],
+["How many grades of membership do we have in the Legion? "," 3 a) Active membership, b) Praetorians c) Auxiliary Membership"],
+["What is the wing of the Legion? "," The two folds of Auxiliary membership. ( The Primary and the highe"],
+["What is the invocation  to be inserted on the tessera for Auxilliary members? "," Mary Immaculate,  Mediatrix of all Graces.... pray for us"],
+["What does a Presidium owe to a legionary who has passed on from their midst? "," I) Offer Mass for the repose of their soul II) Each member is to recite  the Legion's prayer,  inclusive  of the Rosary, at least once, for the same intention. III) It is recommended  that the Rosary and other Legion Prayers be recited at the interment of such a member"],
+["No Presidium meeting is ever to begin without its  written programme termed ?"," The worksheet"],
+["How does the  Legion  meeting open? "," With the invocation and prayer to the Holy Spirit."],
+["What is regarded as the first item in the ordinary business of the meeting? "," The Minutes"],
+["Why is the Secret bag Collection called Secret? ","  So as to place those who have resources and those who don’t, on precisely the same level"],
+["What prayers are to be recited, when a legionary comes late for meeting, before joining the rest of its members? "," The prayers on the tessera which precede the Rosary and the invocations which follow it"],
+["What quality does the handbook say, the Legion lacks, when it describes the meeting as being a clear head on a Paralysed body, powerless to restrain its members or drive them all on..?  "," Discipline"],
+["The Legion has remained intact since it’s inception. This can be attributed to its system being...? "," Invariable"],
+["What principle in the Legion  hand book, teaches us to bestow a careful attention upon the things that surround a Praesidium and likens her to a home that must be well tended?  The Principle of the Mystical home of Nazareth"],
+["Who ranks next in the invocations to the hearts of Jesus and Mary? "," St. Joseph"],
+["Which Patron Saint of the Legion is referred to as the model of devotion to the Sacred Heart of Jesus and  Immaculate heart of Mary? "," St. John the Evengelist"],
+["What episode in the life of our Lady depicts her in the capacity of Mediatrix for the first time? "," Her visitation to her Cousin, Elizabeth and the sanctification of St. John the Baptist"],
+["What feature of the Legion reveals her devotional outlook in an astonishing representation ? ","  The Legion Picture"],
+["What Prayer of the Legion depicts Mary as Mediatrix of all Grace’s, Mother of God and Mother of all men..? "," The Catena"],
+["What item in the Legion represents Universal  circulation, the setting of a true watch word and a token of fraternity between all Legionaries? "," The tessera"],
+["What idea is conveyed by the design of the Vexilium? "," The world is to be conquered by the Holy Spirit, acting through Mary and her children"],
+["What is the Primary duty of any Council to that of the next higher Council? Obedience/ Allegiance/ Faithfulness"],
+["Who is the highest serving officer in a Legion Council? "," The Spiritual Director"],
+["List out the names of all the Councils of the Legion, from the least to the highest? "," Curia, Comitium, Regia, Senatus, Concilium"],
+["What is the very essence of a Legion Council? "," The frank and free discussions of its business and problems, in a manner that connotes it as a school for officers"],
+["A Council designated by the Concilium to exercise authority over the Legion in a Country, shall be called? "," Senatus"],
+["Who appoints the Spiritual Director  of the Concilium? "," The hierarchy of Ireland"],
+["What is the fruit of legionary loyalty? "," Obedience"],
+["A Consecration of legionaries to Our Lady, every year, is styled as what? "," Acies"],
+["What translates in Latin as 'an army ranged in battle array' "," Acies"],
+["When was the first Legion Congress held?  "," In the year 1939"],
+["What is the major sorrow/ blight of legionary recruitment? "," It is that so few are willing to assume the burden of legionary service"],
+["What is regarded as a brick in the edifice of a meeting, upon which its integrity depends? "," The report of work"],
+["Prayer, mortification and the Sacraments, constitute what aspect of life of the legionary? "," The Interior life"],
+["What is regarded as the official exposition of the Legion, of which it constitutes a sacred duty to study? ","The Legion handbook"],
+["What degree in the Legion is a higher grade of active membership? ","The Praetorians"],
+["What are the three basic obligations of Praetorian membership?"," 1) Daily recitation of all prayers in the tessera. 2) Daily Mass and Daily Communion 3)Daily recitation of an office approved by the Church"],
+
+
+
+   
+
+
+
+
+	
+  ];
+       
+        ansButton = document.getElementById("butt");
+        testline = document.getElementById("test");
+        questNo = document.getElementById("quest");
+        QuestionNo = document.getElementById("Quest").getElementsByTagName("button");
+      
+        for (var i = 0; i <= QuestionNo.length; i++) {
+        QuestionNo[i].addEventListener("click", displayQuestion);
+        
+
+        function displayQuestion(id){
+       
+           //This holds th current id
+            choice = this.id;
+            //this change the button color from green to red
+            this.style.backgroundColor = "red";
+
+          //This changes the state of the current question 
+          testline.innerHTML = questions[choice][0];
+          //this holds the current question number
+              quest.innerHTML= "Question "  + choice;
+              //the value of of choice is held in var result
+             result=choice;
+			ansButton.innerHTML= "";
+
+	
+
+           
+           // controls answer display
+              function displayAnswer() {
+           ansButton.innerHTML = questions[result][1];
+				  			
+      
+  
+                  }
+                     } 
+                         }
+                   
+
+//this control the answer button
+function displayDate() {
+  document.getElementById("butt").innerHTML = questions[result][1];
+	
+
+}
+
+
+  /** 
+
+var button = document.querySelector('.button');
+
+button.onclick = function () {
+ var red = Math.floor(Math.random() * 256);
+ var blue = Math.floor(Math.random() * 256);
+ var green = Math.floor(Math.random() * 256);
+
+ this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+};
+
+ 
+           /**   
+
+
+ 
+       var choice, testline, QuestionNo, ansButton, result;
+       var questions = [ 
+      [], 
+     ["Who founder the Legion", "Frank"],
+    
+   ["In what year was the Legion founder","1921"],
+    
+   ["Which vestment is worn during Lent", "Purple"],
+    
+   ["Catholic means",  "Universal"],
+
+   ["Which vestment is worn during Lent", "Purple" ],
+    
+   ["Catholic means", "Universal",]
+  ];
+       
+        ansButton = document.getElementById("butt");
+        testline = document.getElementById("test");
+        QuestionNo = document.getElementById("Quest").getElementsByTagName("input");
+      
+        for (var i = 0; i <= QuestionNo.length; i++) {
+        QuestionNo[i].addEventListener("click", displayQuestion);
+        
+
+        function displayQuestion(id){
+
+            choice = this.id;
+             
+  
+          testline.innerHTML = questions[choice][0];
+             
+             result=choice;
+           
+              function displayAnswer() {
+           ansButton.innerHTML = questions[result][1];
+        
+                  }
+          
+                }
+
+                 }
+                   
+
+
+function displayDate() {
+  document.getElementById("butt").innerHTML = questions[result][1];
+}
+
+
+*/
+  </script>
+        
+        
+        
+        
+        </article>
+    </div>
+  </section>
+    
+    
+  <footer>
+ 
+   
+    <a href="file:///C:/Users/Simon/Desktop/Legion%20App/Home.html" target="_blank"> HOME </a> 
+
+  </footer>
+    
+  
+  </body>
+</div>
+</html>

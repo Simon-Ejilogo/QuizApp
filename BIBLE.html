@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BIBLE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles1.css" rel="stylesheet" type="text/css">
+</head>
+<div>
+     <body> 
+         <header>
+              <h2> LEGION OF MARY QUIZ ( BIBLE )</h2>
+        </header>
+  <section> 
+       <div>
+          <article>
+              
+               <h2 id="quest">Question</h2>   
+               <h1 id= "test" > ? </h1>
+			
+              <button id ="bt" onclick="displayDate()">View Answer </button><br>  
+              <p id="butt"> : </p>  <hr> 
+              
+        <div id="Quest" >
+          <button id='1' name='choices'>1</button>  
+          <button id='2' name='choices'>2</button>
+          <button id='3' name='choices'>3</button>
+          <button id='4' name='choices'>4</button>
+          <button id='5' name='choices'>5</button>
+          <button id='6' name='choices'>6</button>
+          <button id='7' name='choices'>7</button>
+          <button id='8' name='choices'>8</button>
+          <button id='9' name='choices'>9</button>
+          <button id='10' name='choices'>10</button>
+          <button id='11' name='choices'>11</button>
+          <button id='12' name='choices'>12</button>
+          <button id='13' name='choices'>13</button>
+          <button id='14' name='choices'>14</button>
+          <button id='15' name='choices'>15</button>
+          <button id='16' name='choices'>16</button>
+          <button id='17' name='choices'>17</button>
+          <button id='18' name='choices'>18</button>
+          <button id='19' name='choices'>19</button>
+          <button id='20' name='choices'>20</button>
+          <button id='21' name='choices'>21</button>  
+          <button id='22' name='choices'>22</button>
+          <button id='23' name='choices'>23</button>
+          <button id='24' name='choices'>24</button>
+          <button id='25' name='choices'>25</button>
+          <button id='26' name='choices'>26</button>
+          <button id='27' name='choices'>27</button>
+          <button id='28' name='choices'>28</button>
+          <button id='29' name='choices'>29</button>
+          <button id='30' name='choices'>30</button>
+          
+		  
+          </div>
+        
+        <script>
+
+       var choice, testline, QuestionNo, ansButton, result, questNo;
+       var questions = [ 
+      [], 
+    
+      ["Who was the Father of Tobit? "," Tobiel "],
+      ["What caused Tobit’s blindness? "," Warm droppings from Birds "],
+      ["Tobit deposited money with a certain man at Rages, what is the man's name? "," Gabel "],
+      ["Name two request made by Tobit and Sarah when they prayed to God? "," A) They both prayed to die. B) They prayed  not to encounter insults anymore "],
+      ["What was the name of Tobias' travelled companion? "," Azariah "],
+      ["What is the name of the demon that persistently killed Sarah's husbands? "," Asmodeus "],
+      ["What did Tobias and Sarah ask God for, when they knelt down and prayed before going to bed?  ","  Mercy and Deliverance "],
+      ["Who was the father of Sarah? "," Raguel "],
+      ["How was Tobit cured of his blindness?  "," The gall of the fish was smeared on his eyes and this dissolved his Cataracts "],
+      ["Who really was Azariah?  "," He was the Archangel Raphael "],
+      ["What chapter in the book of Tobit, comprises the Canticle? "," Chapter 13  "],
+      ["What is the last chapter of the book of Tobit? "," Chapter 14  "],
+      ["What significant activity did Tobiah and Sarah carry out, on the night they were to consummate their Marriage? "," They prayed "],
+      ["Who wrote the last synoptic Gospel in the Bible? "," St. John the Evengelist  "],
+      ["Who introduced Jesus as the lamb of God? "," St. John the Baptist  "],
+      ["What differentiates the Baptism of St. John from that of Jesus? "," John baptised with water, Jesus baptised with the Holy Spirit  "],
+      ["What was the name of the first disciples mentioned in the Gospel of St. John? "," Andrew and Simon Peter  "],
+      ["In the Gospel of St. John, what was the first sign worked by Jesus? "," Changing of water into wine  "],
+      ["What does it mean to be born again? "," To be Baptised  "],
+      ["The great teaching of the Eucharist is mentioned in which Chapter of St. John’s Gospel? "," Chapter 6  "],
+      ["Jesus healed a blind man in Chapter 9 of St. John's Gospel... what was the instruction given to the man? "," To go and wash in the pool of Siloam  "],
+      ["Who did Jesus hand over a morsel of bread to, at the last Supper? "," Judas Iscariot  "],
+      ["Who did the Jews demand from Pilate in place of Jesus? "," Barrabas  "],
+      ["Which disciple was at the foot of the cross during the crucifixion of Jesus? "," St. John the Evengelist  "], 
+      ["What parts of the fish did Azariah command Tobiah to harvest? "," The gall, the heart and the liver  "],
+      ["What repulsed the demon that was responsible for killing all of Sarah's suitors, that prevented him from striking Tobiah? "," The fragrance of the incense  "],
+      ["How old was Tobit, when he died?  "," 112  "],
+      ["How many sons did Tobiah have?  "," 7  "],
+      ["How many Chapters are there in the book of St. John? 21  "],
+      ["What follows the Gospel of St. John, in the Bible? "," The book of the Acts of the Apostles  "], 
+
+
+
+	
+  ];
+       
+        ansButton = document.getElementById("butt");
+        testline = document.getElementById("test");
+        questNo = document.getElementById("quest");
+        QuestionNo = document.getElementById("Quest").getElementsByTagName("button");
+      
+        for (var i = 0; i <= QuestionNo.length; i++) {
+        QuestionNo[i].addEventListener("click", displayQuestion);
+        
+
+        function displayQuestion(id){
+       
+           //This holds th current id
+            choice = this.id;
+            //this change the button color from green to red
+            this.style.backgroundColor = "red";
+
+          //This changes the state of the current question 
+          testline.innerHTML = questions[choice][0];
+          //this holds the current question number
+              quest.innerHTML= "Question "  + choice;
+              //the value of of choice is held in var result
+             result=choice;
+			ansButton.innerHTML= "";
+
+	
+
+           
+           // controls answer display
+              function displayAnswer() {
+           ansButton.innerHTML = questions[result][1];
+				  			
+      
+  
+                  }
+                     } 
+                         }
+                   
+
+//this control the answer button
+function displayDate() {
+  document.getElementById("butt").innerHTML = questions[result][1];
+	
+
+}
+
+
+  /** 
+
+var button = document.querySelector('.button');
+
+button.onclick = function () {
+ var red = Math.floor(Math.random() * 256);
+ var blue = Math.floor(Math.random() * 256);
+ var green = Math.floor(Math.random() * 256);
+
+ this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+};
+
+ 
+           /**   
+
+
+ 
+       var choice, testline, QuestionNo, ansButton, result;
+       var questions = [ 
+      [], 
+     ["Who founder the Legion", "Frank"],
+    
+   ["In what year was the Legion founder","1921"],
+    
+   ["Which vestment is worn during Lent", "Purple"],
+    
+   ["Catholic means",  "Universal"],
+
+   ["Which vestment is worn during Lent", "Purple" ],
+    
+   ["Catholic means", "Universal",]
+  ];
+       
+        ansButton = document.getElementById("butt");
+        testline = document.getElementById("test");
+        QuestionNo = document.getElementById("Quest").getElementsByTagName("input");
+      
+        for (var i = 0; i <= QuestionNo.length; i++) {
+        QuestionNo[i].addEventListener("click", displayQuestion);
+        
+
+        function displayQuestion(id){
+
+            choice = this.id;
+             
+  
+          testline.innerHTML = questions[choice][0];
+             
+             result=choice;
+           
+              function displayAnswer() {
+           ansButton.innerHTML = questions[result][1];
+        
+                  }
+          
+                }
+
+                 }
+                   
+
+
+function displayDate() {
+  document.getElementById("butt").innerHTML = questions[result][1];
+}
+
+
+*/
+  </script>
+        
+        
+        
+        
+        </article>
+    </div>
+  </section>
+    
+    
+  <footer>
+ 
+   
+    <a href="file:///C:/Users/Simon/Desktop/Legion%20App/Home.html" target="_blank"> HOME </a> 
+
+  </footer>
+    
+  
+  </body>
+</div>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SECTION C</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles1.css" rel="stylesheet" type="text/css">
+</head>
+<div>
+     <body> 
+         <header>
+              <h2> LEGION OF MARY QUIZ 2019 (SECTION C)</h2>
+        </header>
+  <section> 
+       <div>
+          <article>
+              
+               <h2 id="quest">Question</h2>   
+               <h1 id= "test" > ? </h1>
+			
+              <button id ="bt" onclick="displayDate()">View Answer </button><br>  
+              <p id="butt"> : </p>  <hr> 
+              
+        <div id="Quest" >
+          <button id='1' name='choices'>1</button>  
+          <button id='2' name='choices'>2</button>
+          <button id='3' name='choices'>3</button>
+          <button id='4' name='choices'>4</button>
+          <button id='5' name='choices'>5</button>
+          <button id='6' name='choices'>6</button>
+          <button id='7' name='choices'>7</button>
+          <button id='8' name='choices'>8</button>
+          <button id='9' name='choices'>9</button>
+          <button id='10' name='choices'>10</button>
+          <button id='11' name='choices'>11</button>
+          <button id='12' name='choices'>12</button>
+          <button id='13' name='choices'>13</button>
+          <button id='14' name='choices'>14</button>
+          <button id='15' name='choices'>15</button>
+          <button id='16' name='choices'>16</button>
+          <button id='17' name='choices'>17</button>
+          <button id='18' name='choices'>18</button>
+          <button id='19' name='choices'>19</button>
+          <button id='20' name='choices'>20</button>
+         
+          </div>
+        
+        <script>
+
+       var choice, testline, QuestionNo, ansButton, result, questNo;
+       var questions = [ 
+      [], 
+     
+	["The ordinary minister of Holy Communion is ?" ,"The Deacon"],
+    ["Mention the seasons of the church in the right order ?" , "Advent, Christmas, Ordinary season, Lent and Easter"],
+    ["Who is/are the ordinary minister of the sacrament of matrimony ? "," The Couples"],
+    ["Which church is referred to as the Oldest and Mother of all Churches ?" ," St John Lateran Basilica"],
+    ["What is Penance ? " , "Penance is the sacrament whereby sins, whether mortal or venial committed after baptism are forgiven"],
+    ["List the four marks/attributes of the Catholic Church ?" , "One, Holy, Apostolic, Universal"],
+    ["List the three states/categories of members of the church ?" , "Church Militants, Church Penitent/Suffering, Church Triumphant"], 
+    ["Who approved and promulgated the Catechism of the Catholic Church and in what year ?" ," Pope John Paul II, in 1992"],
+	["What is semiotics in the Catholic tradition ?" , "It is a general philosophical theory of signs and symbols"],
+    ["What prominent heresy did the First Council of Nicaea condemn ? " ," Arianism"],
+    ["The power of water to purify and to cleanse was also shown in which event in the Old Testament ?" , "The flood in the time of Noah"],
+    ["Which of the church council revised the Holy mass prayers and permitted mass to be said in local languages ?" , "Vatican II"],
+    ["How many times is a catholic permitted to receive communion in a day ?", "Twice"], 
+    ["What are the conditions for a sin to become mortal ?" , "grave matter, full consent, full knowledge"],
+    ["The first part of the Hail Mary is from which gospel ?" , "Luke"],
+    ["The Pope cannot teach errors in matter of ______?","Faith and Morals"],
+    ["What does the term Doctor of the Church mean ?" , "A Saint whose writings have provided great learning to the Church"],
+    ["From where do we get the teachings of our faith ?" , "Tradition, the Magisterium and Scripture"],
+    ["Saint Aloysius Gonzaga is one of the patron saint of ______?", " Catholic youths"],
+    
+     ["What is a diachronic method ?" , "It's the study of the text across time"],
+
+
+
+
+  ];
+       
+        ansButton = document.getElementById("butt");
+        testline = document.getElementById("test");
+        questNo = document.getElementById("quest");
+        QuestionNo = document.getElementById("Quest").getElementsByTagName("button");
+      
+        for (var i = 0; i <= QuestionNo.length; i++) {
+        QuestionNo[i].addEventListener("click", displayQuestion);
+        
+
+        function displayQuestion(id){
+       
+           //This holds th current id
+            choice = this.id;
+            //this change the button color from green to red
+            this.style.backgroundColor = "red";
+
+          //This changes the state of the current question 
+          testline.innerHTML = questions[choice][0];
+          //this holds the current question number
+              quest.innerHTML= "Question "  + choice;
+              //the value of of choice is held in var result
+             result=choice;
+			ansButton.innerHTML= "";
+
+	
+
+           
+           // controls answer display
+              function displayAnswer() {
+           ansButton.innerHTML = questions[result][1];
+				  			
+      
+  
+                  }
+                     } 
+                         }
+                   
+
+//this control the answer button
+function displayDate() {
+  document.getElementById("butt").innerHTML = questions[result][1];
+	
+
+}
+
+
+  /** 
+
+var button = document.querySelector('.button');
+
+button.onclick = function () {
+ var red = Math.floor(Math.random() * 256);
+ var blue = Math.floor(Math.random() * 256);
+ var green = Math.floor(Math.random() * 256);
+
+ this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+};
+
+ 
+           /**   
+
+
+ 
+       var choice, testline, QuestionNo, ansButton, result;
+       var questions = [ 
+      [], 
+     ["Who founder the Legion", "Frank"],
+    
+   ["In what year was the Legion founder","1921"],
+    
+   ["Which vestment is worn during Lent", "Purple"],
+    
+   ["Catholic means",  "Universal"],
+
+   ["Which vestment is worn during Lent", "Purple" ],
+    
+   ["Catholic means", "Universal",]
+  ];
+       
+        ansButton = document.getElementById("butt");
+        testline = document.getElementById("test");
+        QuestionNo = document.getElementById("Quest").getElementsByTagName("input");
+      
+        for (var i = 0; i <= QuestionNo.length; i++) {
+        QuestionNo[i].addEventListener("click", displayQuestion);
+        
+
+        function displayQuestion(id){
+
+            choice = this.id;
+             
+  
+          testline.innerHTML = questions[choice][0];
+             
+             result=choice;
+           
+              function displayAnswer() {
+           ansButton.innerHTML = questions[result][1];
+        
+                  }
+          
+                }
+
+                 }
+                   
+
+
+function displayDate() {
+  document.getElementById("butt").innerHTML = questions[result][1];
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+*/
+  </script>
+        
+        
+        
+        
+        </article>
+    </div>
+  </section>
+    
+    
+    
+    
+  
+  </body>
+</div>
+</html>

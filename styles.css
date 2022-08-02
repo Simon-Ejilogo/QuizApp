@@ -1,0 +1,29 @@
+a:link {
+  background-color: green;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:visited {
+  background-color:red ;
+  color: white;
+  text-decoration: none;
+
+a:hover, a:active {
+  background-color: red;
+}
+
+ 
+  input:button {
+
+     background-color:blue;
+  color: white;
+  }
+ button:onclick {
+
+    background-color:red ;
+  color: white;
+ }

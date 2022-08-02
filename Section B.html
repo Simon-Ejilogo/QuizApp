@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SECTION B</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles1.css" rel="stylesheet" type="text/css">
+</head>
+<div>
+     <body> 
+         <header>
+              <h2>LEGION OF MARY QUIZ 2019 (SECTION B)</h2>
+        </header>
+  <section> 
+       <div>
+          <article>
+              
+               <h2 id="quest">Question</h2>   
+               <h1 id= "test" > ? </h1>
+			
+              <button id ="bt" onclick="displayDate()">View Answer </button><br>  
+              <p id="butt"> : </p>  <hr> 
+              
+        <div id="Quest" >
+          <button id='1' name='choices'>1</button>  
+          <button id='2' name='choices'>2</button>
+          <button id='3' name='choices'>3</button>
+          <button id='4' name='choices'>4</button>
+          <button id='5' name='choices'>5</button>
+          <button id='6' name='choices'>6</button>
+          <button id='7' name='choices'>7</button>
+          <button id='8' name='choices'>8</button>
+          <button id='9' name='choices'>9</button>
+          <button id='10' name='choices'>10</button>
+          <button id='11' name='choices'>11</button>
+          <button id='12' name='choices'>12</button>
+          <button id='13' name='choices'>13</button>
+          <button id='14' name='choices'>14</button>
+          <button id='15' name='choices'>15</button>
+          <button id='16' name='choices'>16</button>
+          <button id='17' name='choices'>17</button>
+          <button id='18' name='choices'>18</button>
+          <button id='19' name='choices'>19</button>
+          <button id='20' name='choices'>20</button>
+          <button id='21' name='choices'>21</button>  
+          <button id='22' name='choices'>22</button>
+          <button id='23' name='choices'>23</button>
+          <button id='24' name='choices'>24</button>
+          <button id='25' name='choices'>25</button>
+          <button id='26' name='choices'>26</button>
+          <button id='27' name='choices'>27</button>
+          <button id='28' name='choices'>28</button>
+          <button id='29' name='choices'>29</button>
+          <button id='30' name='choices'>30</button>
+          <button id='31' name='choices'>31</button>
+          <button id='32' name='choices'>32</button>
+          <button id='33' name='choices'>33</button>
+          <button id='34' name='choices'>34</button>
+          <button id='35' name='choices'>35</button>
+          <button id='36' name='choices'>36</button>
+          <button id='37' name='choices'>37</button>
+          <button id='38' name='choices'>38</button>
+          <button id='39' name='choices'>39</button>
+          <button id='40' name='choices'>40</button>
+          <button id='41' name='choices'>41</button>  
+          <button id='42' name='choices'>42</button>
+          <button id='43' name='choices'>43</button>
+          <button id='44' name='choices'>44</button>
+          <button id='45' name='choices'>45</button>
+          <button id='46' name='choices'>46</button>
+          <button id='47' name='choices'>47</button>
+          <button id='48' name='choices'>48</button>
+          <button id='49' name='choices'>49</button>
+          <button id='50' name='choices'>50</button>
+          <button id='51' name='choices'>51</button>
+          <button id='52' name='choices'>52</button>
+          <button id='53' name='choices'>53</button>
+          <button id='54' name='choices'>54</button>
+          <button id='55' name='choices'>55</button>
+          <button id='56' name='choices'>56</button>
+          <button id='57' name='choices'>57</button>
+          <button id='58' name='choices'>58</button>
+          <button id='59' name='choices'>59</button>
+          <button id='60' name='choices'>60</button>
+          <button id='61' name='choices'>61</button>
+          <button id='62' name='choices'>62</button>
+          <button id='63' name='choices'>63</button>
+          <button id='64' name='choices'>64</button>
+          <button id='65' name='choices'>65</button>
+          <button id='66' name='choices'>66</button>
+          <button id='67' name='choices'>67</button>
+          <button id='68' name='choices'>68</button>
+          <button id='69' name='choices'>69</button>
+          <button id='70' name='choices'>70</button>
+		  
+          </div>
+        
+        <script>
+
+       var choice, testline, QuestionNo, ansButton, result, questNo;
+       var questions = [ 
+      [], 
+     
+	  ["Mention 5 days on which the red vestment is worn to celebrate the Holy Mass ?", "Palm Sunday, Pentecost, Triumph of the cross, Feasts of martyrs etc"],
+     ["The place/room where the college of Cardinals meet to elect a new pope is called ?", "Sistine Chapel"],
+     ["The third Sunday of Advert is called ____ meaning _____"  ,  " 'Gaudete Sunday' meaning 'Rejoice' "],
+     ["In order of precedence who rank second after the Pope in the Catholic Church ?" ," ‘the Dean of the college of cardinals’"],
+     ["If there are 52 weeks in a year, in how many weeks do will say the 'Angelus Prayer'", "45 weeks"],
+     ["One of the official titles of the pope is 'The Vicar of Christ' Mention 3 of his other titles", "Bishop of Rome, Successor of the Prince of the Apostles, Supreme Pontiff of the Universal Church, Primate of Italy, Archbishop and Metropolitan of the Roman Province, Sovereign of the State of the Vatican City Etc."],
+     ["Which saint is known as the Doctor of Grace ?" , "St Augustine"],
+     ["Who is the author of the Famous book 'The Mystical City of God' ", "Mother Mary of Aggreda"],
+     ["The priest vestment 'The Stole' worn across the neck during confession symbolizes ?" ," Authority "], 
+     ["Fill in the missing word; Episcopate, ______ and Diaconate ", "Presbyterate"],  
+     ["At which council was the Nicene Creed used during mass formed ?" ," The council of Nicaea"],
+     ["How many Eucharistic prayers do we have ?"," 4 "],
+     ["Which color of vestment is worn on the third Sunday of Advent ?" , "Rose"],
+     ["A Bishop is address as 'His Lordship' while an Auxiliary Bishop is address as ?" ,"'His Lordship'"],
+     ["St Anthony of Padua was born in Padua, True or False ?" , "False"],
+     ["What is the date of Our Lady first apparition to the 3 children at Fatima ?" , "13th May 1917"],
+     ["'I have fought the good fight, I have finished the race, I have kept the faith', where can you find this in the bible ?" , "2 Timothy 4:7 "],
+     ["Christian Unity Week is celebrated from when to when every year ?" , "18th Jan - 25th Jan "],
+     ["The birth of St John the Baptist is celebrated on ____while is death on _____?" , "24th June and 29th August"],
+     ["The oldest of the four books of the Gospel is _____? "," The Gospel of Mark"],
+     ["What is the Latin meaning of the inscription 'INRI' ?" , "Iesu Nazarenus Rex Indeneuo"],
+     ["Who wrote the hymn “O Salutaris” used during Benediction ?" , "St Thomas Aquinas"],  
+     ["The book ‘Can we be saint’ was written by Frank Duff in which year ?" , "1916"],   
+     ["The book ‘The Imitation of Christ’ was authored by who ?" , "Thomas Kemphis"],
+     ["Mention 5 of the Canonicals books in the Holy Bible ?" , "Tobit, Judith, 1 and 2 Maccabees, Wisdom, Sirach, Baruch"], 
+     ["The Archdiocese of Lagos was formed in which year ?" ," 8th April 1950"],
+     ["Who authored the book ‘The Confession’" , "St Augustine"],
+     ["The ‘Latin Vulgate’ the adopted Catholic Bible was compiled by who ?" ," St Jerome "],
+     ["Who is the current Dean of the College of Cardinals ?" , "Angelo Sodano"],
+     ["The title ‘Supreme Pontiff’ from the Latin word ‘pontifex maximus’ means ?" , "Greatest Priest"],
+	  ["The power of water to purify and to cleanse was also shown in which event in the Old Testament ?" , "The flood in the time of Noah"],
+    ["Which of the church council revised the Holy mass prayers and permitted mass to be said in local languages ?" , "Vatican II"],
+    ["How many times is a catholic permitted to receive communion in a day ?", "Twice"], 
+    ["What are the conditions for a sin to become mortal ?" , "grave matter, full consent, full knowledge"],
+    ["The first part of the Hail Mary is from which gospel ?" , "Luke"],
+    ["The Pope cannot teach errors in matter of ______?","Faith and Morals"],
+    ["What does the term Doctor of the Church mean ?" , "A Saint whose writings have provided great learning to the Church"],
+    ["From where do we get the teachings of our faith ?" , "Tradition, the Magisterium and Scripture"],
+    ["Saint Aloysius Gonzaga is one of the patron saint of ______?", " Catholic youths"],
+    
+     ["What is a diachronic method ?" , "It's the study of the text across time"],
+     ["The literally meaning of ‘ex cathedra’ is what ?" , "‘From the chair’"],
+     ["Who was the first successor of St Peter ?" ," Pope Saint Linus(died in 76AD)"],
+     ["How many many church chief commandments do we have ?" , "6"],
+     ["If the evening prayer of the Divine office is called Vespers, the morning prayer is called what ? ", "Lauds"],
+	 ["Blessed Cyprian Michael Iwene Tansi is celebrated on which day?" , "January 20"],
+     ["During benediction, the priest says ‘panem de caelo praestitisti eis’ meaning ‘You have given them bread out of heaven’ and the response is what? meaning what? ", "Omne delectamentum in se habentem ‘Having within it all sweetness’"],
+     ["Which of our Lords Apostle was the first to drink from the chalice of martyrdom ?" ," St James"],
+	 ["Name two bible verses that can be use to defend the teaching of the existence of Purgatory ?" , "1 John 5:17, Rev 21:25-27, 2 Maccabees 12:45, Matt 5:25,48"],
+     ["Which feast is celebrated on the 29th of September ?" , "The feast of the Archangels"], 
+     ["Mention the dates when the birth and death of Frank Duff are celebrated? ", "June 7 and November 7"],
+     ["Which saint is celebrated on the first of August ?" , "St Alphonsus Mary De Liguori"],
+     ["Who is the founder of the Society of Jesus (Jesuits)?" , "St Ignatius Loyola"],
+     ["The doctrine of Mary Mother of God, was solemnly proclaimed at which council?" , "Council of Ephesus(431)"],
+	 ["How many ecclesiastical provinces do will have in Nigeria ?" , "9 ecclesiastical provinces"],
+     ["The feast of the Transfiguration of Our Lord is celebrated on which date ?" , "August 6th "],
+     ["The feast of the Presentation of Our Lord is celebrated when ?" , "February 2"],
+     ["What do you have in Genesis 3:15 ?" ," ‘Her offspring will crush your head and you will bite their heel’"],
+     ["The feast of the Triumph of the Cross is celebrated when ?" , "September 14"],
+     ["‘For behold, henceforth all generation will call me blessed’, where is this in the bible ?" ," Luke 1:38"],
+     ["Mention any 2 bible verses to back up the fact that Catholics don’t worship images ?" ,"Numbers 21:8-9, Col 1:20; 2:4, Exodus 25:17:20, 27:20, Genesis 9:12-17, John 12:32, Acts 19:11-12 Etc."],
+     ["When was the second Vatican Council held ?" , "1962-1965"],
+     ["Which pope announced the second Vatican council?" , "Pope John XXIII (Jan 25 195)"],
+     ["Who is referred to as the ‘Angelic Doctor’? ", "St Thomas Aquinas"],
+     ["His Eminence Francis Cardinal Arinze retired as which prefect in the College of Cardinals ?" , "Prefect, Congregation for Divine Worship"],
+     ["Which of the Apostles was the last to die ?" , "St John the beloved"],
+     ["Who was the first Archbishop of Lagos ?" , "Archbishop Leo Taylor"],
+     ["How many Archdioceses and dioceses are in Nigeria ?" , "9 Archdioceses and 44 Dioceses"],
+     ["Who is a Papal Nucio ?" , "A representative of the pope in a place"],
+     ["Who is uphold as the model and patron of secular clergy ?" , "St John Mary Vianney"],
+     ["Our lady of Fatima is celebrated on which date ?" , "May 13"],
+
+	
+  ];
+       
+        ansButton = document.getElementById("butt");
+        testline = document.getElementById("test");
+        questNo = document.getElementById("quest");
+        QuestionNo = document.getElementById("Quest").getElementsByTagName("button");
+      
+        for (var i = 0; i <= QuestionNo.length; i++) {
+        QuestionNo[i].addEventListener("click", displayQuestion);
+        
+
+        function displayQuestion(id){
+       
+           //This holds th current id
+            choice = this.id;
+            //this change the button color from green to red
+            this.style.backgroundColor = "red";
+
+          //This changes the state of the current question 
+          testline.innerHTML = questions[choice][0];
+          //this holds the current question number
+              quest.innerHTML= "Question "  + choice;
+              //the value of of choice is held in var result
+             result=choice;
+			ansButton.innerHTML= "";
+
+	
+
+           
+           // controls answer display
+              function displayAnswer() {
+           ansButton.innerHTML = questions[result][1];
+				  			
+      
+  
+                  }
+                     } 
+                         }
+                   
+
+//this control the answer button
+function displayDate() {
+  document.getElementById("butt").innerHTML = questions[result][1];
+	
+
+}
+
+
+  /** 
+
+var button = document.querySelector('.button');
+
+button.onclick = function () {
+ var red = Math.floor(Math.random() * 256);
+ var blue = Math.floor(Math.random() * 256);
+ var green = Math.floor(Math.random() * 256);
+
+ this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+};
+
+ 
+           /**   
+
+
+ 
+       var choice, testline, QuestionNo, ansButton, result;
+       var questions = [ 
+      [], 
+     ["Who founder the Legion", "Frank"],
+    
+   ["In what year was the Legion founder","1921"],
+    
+   ["Which vestment is worn during Lent", "Purple"],
+    
+   ["Catholic means",  "Universal"],
+
+   ["Which vestment is worn during Lent", "Purple" ],
+    
+   ["Catholic means", "Universal",]
+  ];
+       
+        ansButton = document.getElementById("butt");
+        testline = document.getElementById("test");
+        QuestionNo = document.getElementById("Quest").getElementsByTagName("input");
+      
+        for (var i = 0; i <= QuestionNo.length; i++) {
+        QuestionNo[i].addEventListener("click", displayQuestion);
+        
+
+        function displayQuestion(id){
+
+            choice = this.id;
+             
+  
+          testline.innerHTML = questions[choice][0];
+             
+             result=choice;
+           
+              function displayAnswer() {
+           ansButton.innerHTML = questions[result][1];
+        
+                  }
+          
+                }
+
+                 }
+                   
+
+
+function displayDate() {
+  document.getElementById("butt").innerHTML = questions[result][1];
+}
+
+
+*/
+  </script>
+        
+        
+        
+        
+        </article>
+    </div>
+  </section>
+    
+    
+    
+    
+  
+  </body>
+</div>
+</html>

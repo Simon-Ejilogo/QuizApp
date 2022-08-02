@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SECTION A</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles1.css" rel="stylesheet" type="text/css">
+</head>
+<div>
+     <body> 
+         <header>
+              <h2> LEGION OF MARY QUIZ </h2>
+        </header>
+  <section> 
+       <div>
+          <article>
+              
+               <h2 id="quest">Question</h2>   
+               <h1 id= "test" > ? </h1>
+			
+              <button id ="bt" onclick="displayDate()">View Answer </button><br>  
+              <p id="butt"> : </p>  <hr> 
+              
+        <div id="Quest" >
+          <button id='1' name='choices'>1</button>  
+          <button id='2' name='choices'>2</button>
+          <button id='3' name='choices'>3</button>
+          <button id='4' name='choices'>4</button>
+          <button id='5' name='choices'>5</button>
+          <button id='6' name='choices'>6</button>
+          <button id='7' name='choices'>7</button>
+          <button id='8' name='choices'>8</button>
+          <button id='9' name='choices'>9</button>
+          <button id='10' name='choices'>10</button>
+          <button id='11' name='choices'>11</button>
+          <button id='12' name='choices'>12</button>
+          <button id='13' name='choices'>13</button>
+          <button id='14' name='choices'>14</button>
+          <button id='15' name='choices'>15</button>
+          <button id='16' name='choices'>16</button>
+          <button id='17' name='choices'>17</button>
+          <button id='18' name='choices'>18</button>
+          <button id='19' name='choices'>19</button>
+          <button id='20' name='choices'>20</button>
+          <button id='21' name='choices'>21</button>  
+          <button id='22' name='choices'>22</button>
+          <button id='23' name='choices'>23</button>
+          <button id='24' name='choices'>24</button>
+          <button id='25' name='choices'>25</button>
+          <button id='26' name='choices'>26</button>
+          <button id='27' name='choices'>27</button>
+          <button id='28' name='choices'>28</button>
+          <button id='29' name='choices'>29</button>
+          <button id='30' name='choices'>30</button>
+          <button id='31' name='choices'>31</button>
+          <button id='32' name='choices'>32</button>
+          <button id='33' name='choices'>33</button>
+          <button id='34' name='choices'>34</button>
+          <button id='35' name='choices'>35</button>
+          <button id='36' name='choices'>36</button>
+          <button id='37' name='choices'>37</button>
+          <button id='38' name='choices'>38</button>
+          <button id='39' name='choices'>39</button>
+          <button id='40' name='choices'>40</button>
+          <button id='41' name='choices'>41</button>  
+          <button id='42' name='choices'>42</button>
+          <button id='43' name='choices'>43</button>
+          <button id='44' name='choices'>44</button>
+          <button id='45' name='choices'>45</button>
+          <button id='46' name='choices'>46</button>
+          <button id='47' name='choices'>47</button>
+          <button id='48' name='choices'>48</button>
+          <button id='49' name='choices'>49</button>
+          <button id='50' name='choices'>50</button>
+          <button id='51' name='choices'>51</button>
+          <button id='52' name='choices'>52</button>
+          <button id='53' name='choices'>53</button>
+          <button id='54' name='choices'>54</button>
+          <button id='55' name='choices'>55</button>
+          <button id='56' name='choices'>56</button>
+          <button id='57' name='choices'>57</button>
+          <button id='58' name='choices'>58</button>
+          <button id='59' name='choices'>59</button>
+          <button id='60' name='choices'>60</button>
+		 <button id='61' name='choices'>61</button>
+          <button id='62' name='choices'>62</button>
+          <button id='63' name='choices'>63</button>
+          <button id='64' name='choices'>64</button>
+          <button id='65' name='choices'>65</button>
+          <button id='66' name='choices'>66</button>
+          <button id='67' name='choices'>67</button>
+          <button id='68' name='choices'>68</button>
+          <button id='69' name='choices'>69</button>
+          <button id='70' name='choices'>70</button>
+		  
+          </div>
+        
+        <script>
+
+       var choice, testline, QuestionNo, ansButton, result, questNo;
+       var questions = [ 
+      [], 
+     
+	["Complete the quote as found in the handbook ‘Pluck one thread, and the web ye mar; Break but one of a thousand keys, and the painting jar ……’" , "Through all will run"],
+    ["Mention the first five chapters of the official Legion handbook ?" ,"Name and Origin, Object, Spirit of the Legion, Legionary service and The devotional outlook of the legion"],
+    ["If Frank Duff is canonize today, on which day will his memorial/feast celebrated ?" , "November 7"],
+    ["If the Legion started in 1921, how many years was that after our lady’s first apparition at Fatima ?"," 4 years(1917)"],
+   ["‘The legion of Mary! What a perfectly chosen name!’ who made this statement ?" , "Pope Pius XI"], 
+   ["What do will have in the book of the bible ‘Song of Songs 6:10’ ?"  , " ‘Who is she that comes forth as the morning rises…..’"],
+   ["‘The legion of Mary presents the true face of the Catholic Church’,who made the statement ?" , "Pope John XXIII"],
+   ["What is the first corporate act of the legion ?" , "Go on their knees, then invocation of the Holy Spirit"],
+   ["The legionaries hope to render themselves worthy of their great heavenly Queen by their Loyalty, their______ and their_______?" , "Virtues, Courage"],
+  ["How many officers is a praesidium expected to have and how many of them are under obligation to have taken the legion promise?" , "5 and 4 must have taken the legion promise"],
+  ["Who are the enemy ? as  contained in the handbook" ," They are the wicked who resist the will of God"],
+  ["Mention 3 qualities of the ancient Roman legion from which the legion takes its name ?" ," loyalty, courage, discipline, endurance and success"],
+  ["Mention 7 of the 10 principal virtues of Mary ?" , "Perfect Obedience, Angelic Sweetness, Continual prayer, Universal Mortification, spotless purity, Heroic patience, Heavenly Wisdom, Self-sacrificing courage, Love of God and Lively faith"],
+  ["If CCC stands for Catechism of the Catholic Church then, CIC is what ? ", "Codex Iuris Canonici (The Code of Canon Law)"],
+   ["The ordinary minister of Holy Communion is ?" ,"The Deacon"],
+    ["Mention the seasons of the church in the right order ?" , "Advent, Christmas, Ordinary season, Lent and Easter"],
+    ["Who is/are the ordinary minister of the sacrament of matrimony ? "," The Couples"],
+    ["Which church is referred to as the Oldest and Mother of all Churches ?" ," St John Lateran Basilica"],
+    ["What is Penance ? " , "Penance is the sacrament whereby sins, whether mortal or venial committed after baptism are forgiven"],
+    ["List the four marks/attributes of the Catholic Church ?" , "One, Holy, Apostolic, Universal"],
+    ["List the three states/categories of members of the church ?" , "Church Militants, Church Penitent/Suffering, Church Triumphant"], 
+    ["Who approved and promulgated the Catechism of the Catholic Church and in what year ?" ," Pope John Paul II, in 1992"],
+	["What is semiotics in the Catholic tradition ?" , "It is a general philosophical theory of signs and symbols"],
+    ["What prominent heresy did the First Council of Nicaea condemn ? " ," Arianism"],
+  ["LG is Lumen Gentium (Dogmatic Constitution of the Church), what is SC ?" ," Sacrosantum Concillium (Constitution on the Sacred Liturgy)"],
+  ["‘Must be a living Sacrifice holy and acceptable to God’, where is this found in the bible ?"," Romans 12:1"],
+  ["‘Must live in love, as Christ loved us and gave himself up for us’, Where is this in the Holy book ?" , "Ephesians 5:2"],
+  ["The devotional outlook of the legion is reflected in its ______?" , "Prayers"],
+  ["How many chapters and Appendix are found in the handbook ?" , "41 Chapters and 11 Appendix"],
+  ["The True Devotion to Mary or Slavery of Mary is enshrined in two books mention them ?" ," True Devotion to the Blessed Virgin Mary and Secret of Mary"],
+  ["Who made this quote ‘Mary is the treasurer whose treasure is Jesus Christ, it is he himself whom she possesses, he himself whom she gives’ ? ", "St Peter Julian Eymard"],
+  ["As found in chapter 34 of the HB, The faults of a praesidium are usually the faults of the ____? Officers or President ", "President"],
+  ["‘Through you, O Mary, we have a most sure pledge of our resurrection’ who wrote this words ?" , "St Ephraem"],
+  ["In the right order list titles of the 3 last chapters of the Handbook ?" ,"Cardinal Points of the Legion Apostolate, Go Preach the Gospel and The Greatest of this is Love"], 
+  ["‘Sooner or later the legionaries must attack the most difficult work’ this is an item in which chapter of the handbook?" , "Chapter 39"],
+  ["Mention 5 articles/items found in chapter 40 (Go Preach the Gospel) in the Handbook ?" , "The last testament, the irreligious population, Peregrinatio Pro Christo, Incolae Mariae, Exploratio Dominicalis etc."],
+  ["Mention 2 reasons as contained in the HB, why material relief is prohibited ?" , "Seldom welcome by those who do not need relief, those who expect to get and did not become disappointed, the legion will not accomplish spiritual good by giving"],
+  ["What is the name of the oldest praesidium in St Anthony ?" ,"Our Lady Queen of Martyrs"],
+  ["What is name of the youngest praesidium in the parish and list the names of all it officers ?" ,"Our Lady of Fatima, Bro Elijah Enyia, Bro Nicholas Omonjeva, Sis Christiana Okonkwo and Sis Rosemary Obu"],
+  ["What was Frank Duff’s age as at the time Nigeria got her Independence?" , "71 years(Born 1889)"],
+  ["Name two popes that wrote papal letters to the Legion of Mary as contained in Appendix 1 of the handbook ?" , "Pius XI, Pius XII, John XXIII, Paul VI"],
+  ["Who was the first Nigerian to become the president of a praesidium ?" , "Micheal Ekeng"],
+  ["Venerable Edel Quinn died on what date ?" , " 5/12/ 1944"],
+  ["'It is impossible to believe that the connection between the ‘True Devotion’ meeting and the immediate emergence of the Legion was a mere coincidence. The moment it established in minds the true stature of Our Lady in the Christian system, things were ready for the Legion' Who wrote this words? ", "Frank Duff"],
+  ["Who is the current secretary of the Concillium ?" , "Maureen McManus"],
+  ["How old was Alfie Lambe when he died ? " ," 27 years"],
+  ["Mention 4 characteristics of true devotion to Mary ?" , "Interior, Tender, Holy, Constant, Disinterested"],
+  ["When the period of probation is over, what is the least duration of time given to a candidate to prepare for his/her legion promise ?" , "At least one week"],
+  ["List 6 basis duties of every legionaries ?" , "Attendance at meetings, weekly work, verbal report, preserved confidence, have a notebook, daily catena, recruitment, handbook study, pray and work"],
+  ["'Mary is a virgin unique and unlike any other: Virgo Singularis. When considering her, speak not to me of human rules, tell me of the rules of God’, this words is attributed to who ?" , "Bossuet"],
+  ["‘It is no longer I who live, but it is Christ who lives in me’, where is this in the bible ?"," Galatians 2:20"],
+  ["‘That beautiful standard of the legion’, who made this statement ?" , "Pope Pius XI"],
+  ["Name the two flowers represented on the standard of the legion ?" , "Rose and Lily"],
+  ["The whole design of the Vexillum coveys what ?" , "The idea that the world is to be conquered by the Holy Spirit acting through Mary and her children"],
+  ["What is the most effective way for a higher council to fulfil its functions of superintendence of its distant affiliated councils ?" ," Through the appointment of a correspondent"],
+  ["The legionary promise is addressed to who? ", "The Holy Spirit"],
+  ["Who argued that Mary is not half known or loved if not the world would have been a better place ?" , "Fr Faber"],
+  ["What is the last action of a praesidium meeting attended by the spiritual director (priest)?" ," The priest blessings"],
+  ["How many hours is a standard, vibrant and efficient council meeting expected to last ?" , "No fixed time"],
+  ["What is the first item of the ordinary business of a praesidium meeting ?" ," The minutes"],
+  ["State two actions that takes place immediately after the reading of the minutes and before the standing instruction ?" ,"Minutes approval and signing"], 
+  ["As found in chapter 17 of the HB, lists 2 saints that explicitly proclaim Mary as the Queen of Purgatory?" , "St Vincent Ferrer, St Bernadine of Sienna"],
+  ["List the conditions to become a praetorian member ?" ," Daily recitation of all prayers in tessera, Daily mass and communion , morning and evening divine offices prayers"],
+  ["The catena is represented, as to its name by _______?" , "The Chain-border"],
+  ["‘Regina Angelorum’ Queen of the Angels! What enchantment, what foretaste of heaven it is to think of  Mary our mother ceaselessly accompanied by legions of angels!’, Who made this exclamation ?" ," Pope John XXIII"],
+  ["Which of the legion patron is pre-eminently the patron for an apostolic organization ?" , "St Peter"],
+  ["______ is the most complete, in fact an astonishing showing forth of the devotional outlook of the legion ?" , "The legion picture"],
+  ["In latin, tessera had a particular meaning of a______?" , "tally or token, which was divided among friends in other that they or their descendants might always recognize each"],
+  ["Mary’s relation to the Eternal Father is usually defined as that of _______? " ,"Daughter"],
+  ["A second aspect of the legion devotion is towards _______?" , "The Immaculate Conception"],
+  ["Sacrament of Extreme Unction is also called what?","Anointing of the sick"],
+
+
+
+	
+  ];
+       
+        ansButton = document.getElementById("butt");
+        testline = document.getElementById("test");
+        questNo = document.getElementById("quest");
+        QuestionNo = document.getElementById("Quest").getElementsByTagName("button");
+      
+        for (var i = 0; i <= QuestionNo.length; i++) {
+        QuestionNo[i].addEventListener("click", displayQuestion);
+        
+
+        function displayQuestion(id){
+       
+           //This holds th current id
+            choice = this.id;
+            //this change the button color from green to red
+            this.style.backgroundColor = "red";
+
+          //This changes the state of the current question 
+          testline.innerHTML = questions[choice][0];
+          //this holds the current question number
+              quest.innerHTML= "Question "  + choice;
+              //the value of of choice is held in var result
+             result=choice;
+			ansButton.innerHTML= "";
+
+	
+
+           
+           // controls answer display
+              function displayAnswer() {
+           ansButton.innerHTML = questions[result][1];
+				  			
+      
+  
+                  }
+                     } 
+                         }
+                   
+
+//this control the answer button
+function displayDate() {
+  document.getElementById("butt").innerHTML = questions[result][1];
+	
+
+}
+
+
+  /** 
+
+var button = document.querySelector('.button');
+
+button.onclick = function () {
+ var red = Math.floor(Math.random() * 256);
+ var blue = Math.floor(Math.random() * 256);
+ var green = Math.floor(Math.random() * 256);
+
+ this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+};
+
+ 
+           /**   
+
+
+ 
+       var choice, testline, QuestionNo, ansButton, result;
+       var questions = [ 
+      [], 
+     ["Who founder the Legion", "Frank"],
+    
+   ["In what year was the Legion founder","1921"],
+    
+   ["Which vestment is worn during Lent", "Purple"],
+    
+   ["Catholic means",  "Universal"],
+
+   ["Which vestment is worn during Lent", "Purple" ],
+    
+   ["Catholic means", "Universal",]
+  ];
+       
+        ansButton = document.getElementById("butt");
+        testline = document.getElementById("test");
+        QuestionNo = document.getElementById("Quest").getElementsByTagName("input");
+      
+        for (var i = 0; i <= QuestionNo.length; i++) {
+        QuestionNo[i].addEventListener("click", displayQuestion);
+        
+
+        function displayQuestion(id){
+
+            choice = this.id;
+             
+  
+          testline.innerHTML = questions[choice][0];
+             
+             result=choice;
+           
+              function displayAnswer() {
+           ansButton.innerHTML = questions[result][1];
+        
+                  }
+          
+                }
+
+                 }
+                   
+
+
+function displayDate() {
+  document.getElementById("butt").innerHTML = questions[result][1];
+}
+
+
+*/
+  </script>
+        
+        
+        
+        
+        </article>
+    </div>
+  </section>
+    
+    
+    
+    
+  
+  </body>
+</div>
+</html>

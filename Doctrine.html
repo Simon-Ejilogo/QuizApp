@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CHURCH DOCTRINE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles1.css" rel="stylesheet" type="text/css">
+</head>
+<div>
+     <body> 
+         <header>
+              <h2> LEGION OF MARY QUIZ (CHURCH DOCTRINE)</h2>
+        </header>
+  <section> 
+       <div>
+          <article>
+              
+               <h2 id="quest">Question</h2>   
+               <h1 id= "test" > ? </h1>
+			
+              <button id ="bt" onclick="displayDate()">View Answer </button><br>  
+              <p id="butt"> : </p>  <hr> 
+              
+        <div id="Quest" >
+          <button id='1' name='choices'>1</button>  
+          <button id='2' name='choices'>2</button>
+          <button id='3' name='choices'>3</button>
+          <button id='4' name='choices'>4</button>
+          <button id='5' name='choices'>5</button>
+          <button id='6' name='choices'>6</button>
+          <button id='7' name='choices'>7</button>
+          <button id='8' name='choices'>8</button>
+          <button id='9' name='choices'>9</button>
+          <button id='10' name='choices'>10</button>
+          <button id='11' name='choices'>11</button>
+          <button id='12' name='choices'>12</button>
+          <button id='13' name='choices'>13</button>
+          <button id='14' name='choices'>14</button>
+          <button id='15' name='choices'>15</button>
+          <button id='16' name='choices'>16</button>
+          <button id='17' name='choices'>17</button>
+          <button id='18' name='choices'>18</button>
+          <button id='19' name='choices'>19</button>
+          <button id='20' name='choices'>20</button>
+          <button id='21' name='choices'>21</button>  
+          <button id='22' name='choices'>22</button>
+          <button id='23' name='choices'>23</button>
+          <button id='24' name='choices'>24</button>
+          <button id='25' name='choices'>25</button>
+          <button id='26' name='choices'>26</button>
+          <button id='27' name='choices'>27</button>
+          <button id='28' name='choices'>28</button>
+          <button id='29' name='choices'>29</button>
+          <button id='30' name='choices'>30</button>
+        
+          </div>
+        
+        <script>
+
+       var choice, testline, QuestionNo, ansButton, result, questNo;
+       var questions = [ 
+      [], 
+     
+["Sacrament of Extreme Unction is also called what?", "Anointing of the sick"],
+["What  Sacrament produces the hierarchy of the Church? ", "Holy Orders"],
+["What is the teaching authority of the church? ", " Magisterium"],
+["How many are the articles of faith /creed?  ", "12"],
+["Baptism, Holy Eucharist and Confirmation are usually categorized as the Sacraments of  what? In the Catholic Church...  ", " Sacraments of Christian Initiation"],
+["What do the Sacraments; Baptism, Confirmation and Holy Orders have in common?", " They imprint an indelible seal/ character."],
+["Who  is  the Bishop of Rome?","The Pope"],
+["What is the highest choir of Angels? ", "Seraphim"],
+["What are the three main deposits / sources of the catholic faith? ", "Sacred scripture, Sacred Traditions and Magisterium"],
+["The announcement in the Church, about proposed plans of marriage by a Couple is called what?", "Banns"],
+["How many choirs of Angels are there?", "9"],
+["What are the conditions for a sin to be considered as mortal sin?"," Full knowledge, full consent and grave matter"],
+["The church believes and teaches about reincarnation, yes or no?", "No"],
+["Ascension is how many days after easter?" ," 40 days"],
+["The official public worship of the church is called what? ", " Liturgy"],
+["Who is the ordinary minister for the sacrament of confirmation? "," Bishop"],
+["What are two forms of actual sin?"," Mortal and venial sin"],
+["What are the theological virtues?"," Faith, Hope and Charity"],
+["Which Sacrament forgives all the sins one has committed as well the debt due to the sins?","Baptism"],
+["Remission of temporal punishment due to sin, whose guilt has already been forgiven, is termed?"," Indulgence"],
+["What is a habitual and firm disposition to do good?"," Virtue"],
+["Which  gift of the Holy Spirit, ensures firmness in difficulties and constancy in the pursuit of the good.?"," Fortitude"]
+["Perjury is a sin against what commandment? ","2nd – Thou shall not take the name of the Lord in vain"],
+["The souls in Purgatory are otherwise referred to, by which arm in the Communion of Saints?" , "Church Suffering"],
+["Assumption is celebrated on what day?", "August 15"],
+["What are the acts of penitence in the Sacrament of Penance?","Contrition, Confession and Satisfaction"],
+["What grace predisposes us into life everlasting in the kingdom of God? ","Sanctifying Grace"],
+["Who is the ordinary minister for the sacrament of matrimony? ","The couple"],
+["What are the holy days of obligation in the catholic church?","Christmas, Ascension, Assumption and All Saints"],
+["What is the obstinate denial of the catholic faith or some truths of the catholic faith? ","Heresy"],
+
+  ];
+       
+        ansButton = document.getElementById("butt");
+        testline = document.getElementById("test");
+        questNo = document.getElementById("quest");
+        QuestionNo = document.getElementById("Quest").getElementsByTagName("button");
+      
+        for (var i = 0; i <= QuestionNo.length; i++) {
+        QuestionNo[i].addEventListener("click", displayQuestion);
+        
+
+        function displayQuestion(id){
+       
+           //This holds th current id
+            choice = this.id;
+            //this change the button color from green to red
+            this.style.backgroundColor = "red";
+
+          //This changes the state of the current question 
+          testline.innerHTML = questions[choice][0];
+          //this holds the current question number
+              quest.innerHTML= "Question "  + choice;
+              //the value of of choice is held in var result
+             result=choice;
+			ansButton.innerHTML= "";
+
+	
+
+           
+           // controls answer display
+              function displayAnswer() {
+           ansButton.innerHTML = questions[result][1];
+				  			
+      
+  
+                  }
+                     } 
+                         }
+                   
+
+//this control the answer button
+function displayDate() {
+  document.getElementById("butt").innerHTML = questions[result][1];
+	
+
+}
+
+
+  /** 
+
+var button = document.querySelector('.button');
+
+button.onclick = function () {
+ var red = Math.floor(Math.random() * 256);
+ var blue = Math.floor(Math.random() * 256);
+ var green = Math.floor(Math.random() * 256);
+
+ this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+};
+
+ 
+           /**   
+
+
+ 
+       var choice, testline, QuestionNo, ansButton, result;
+       var questions = [ 
+      [], 
+     ["Who founder the Legion", "Frank"],
+    
+   ["In what year was the Legion founder","1921"],
+    
+   ["Which vestment is worn during Lent", "Purple"],
+    
+   ["Catholic means",  "Universal"],
+
+   ["Which vestment is worn during Lent", "Purple" ],
+    
+   ["Catholic means", "Universal",]
+  ];
+       
+        ansButton = document.getElementById("butt");
+        testline = document.getElementById("test");
+        QuestionNo = document.getElementById("Quest").getElementsByTagName("input");
+      
+        for (var i = 0; i <= QuestionNo.length; i++) {
+        QuestionNo[i].addEventListener("click", displayQuestion);
+        
+
+        function displayQuestion(id){
+
+            choice = this.id;
+             
+  
+          testline.innerHTML = questions[choice][0];
+             
+             result=choice;
+           
+              function displayAnswer() {
+           ansButton.innerHTML = questions[result][1];
+        
+                  }
+          
+                }
+
+                 }
+                   
+
+
+function displayDate() {
+  document.getElementById("butt").innerHTML = questions[result][1];
+}
+
+
+*/
+  </script>
+        
+        
+        
+        
+        </article>
+    </div>
+  </section>
+    
+    
+  <footer>
+ 
+   
+    <a href="file:///C:/Users/Simon/Desktop/Legion%20App/Home.html" target="_blank"> HOME </a> 
+
+  </footer>
+    
+  
+  </body>
+</div>
+</html>
